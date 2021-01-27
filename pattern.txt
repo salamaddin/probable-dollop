@@ -1,0 +1,13 @@
+public class Test{
+public static void main(String[] args){ 
+        
+        String str = "50+20*30";
+        String[] substr = str.split("(?<=\\d)(?+\\D)|(?+\\d)");
+        
+        float num1 = Float.parseFloat(substr[0]);
+        float num2 = Float.parseFloat(substr[2]);
+        
+        float ans = num1+num2;
+        System.out.print(ans);
+}
+}
